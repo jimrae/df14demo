@@ -1,0 +1,25 @@
+<apex:page standardController="Opportunity" extensions="launchQuoteEXT" >
+    <div style="display:none">
+        <!-- This is used to query the data into the controller so it can be passed to the Canvas App-->
+        <apex:outputText value="{!Opportunity.Name}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Account.name}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.StageName}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Amount}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Probability}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.CloseDate}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Type}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.ForecastCategoryName}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Contact__r.FirstName}"></apex:outputText>        
+        <apex:outputText value="{!Opportunity.Contact__r.LastName}"></apex:outputText> 
+        <apex:outputText value="{!Opportunity.OwnerId}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Owner.Firstname}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Owner.Lastname}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Owner.name}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Owner.Phone}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Owner.Email}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Quote_Number__c}"></apex:outputText>
+        <apex:outputText value="{!Opportunity.Id}"></apex:outputText>
+    </div>
+    <apex:canvasApp applicationName="DreamForce Demo" canvasId="DFDemo" parameters="{!jParameters}" 
+    maxHeight="infinite" maxWidth="400" scrolling="true" />  
+</apex:page>

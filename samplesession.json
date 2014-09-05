@@ -1,0 +1,142 @@
+{
+    "algorithm": "HMACSHA256",
+    "issuedAt": 1170553281,
+    "userId": "005o0000000KXtTAAW",
+    "client": {
+        "refreshToken": null,
+        "instanceId": "_:DreamForce_Demo:DFDemo",
+        "targetOrigin": "https://c.na17.visual.force.com",
+        "instanceUrl": "https://na17.salesforce.com",
+        "oauthToken": "00Do0000000YZr8!AQgAQIcPF1k16sbBvS3CagSKVJ4j0dCkB8QbcN7NpgaBhWlHnjLjsZsp.DnjvwRmPRSijRVadyS8Qx4oJLZGiP9LDXM4wCl_"
+    },
+    "context": {
+        "user": {
+            "userId": "005o0000000KXtTAAW",
+            "userName": "jrae+df14@xede.com",
+            "firstName": "Jim",
+            "lastName": "Rae",
+            "email": "jrae+df14@xede.com",
+            "fullName": "Jim Rae",
+            "locale": "en_US",
+            "language": "en_US",
+            "timeZone": "America/Los_Angeles",
+            "profileId": "00eo0000000rFUf",
+            "roleId": null,
+            "userType": "STANDARD",
+            "currencyISOCode": "USD",
+            "profilePhotoUrl": "https://c.na17.content.force.com/profilephoto/005/F",
+            "profileThumbnailUrl": "https://c.na17.content.force.com/profilephoto/005/T",
+            "siteUrl": null,
+            "siteUrlPrefix": null,
+            "networkId": null,
+            "accessibilityModeEnabled": false,
+            "isDefaultNetwork": true
+        },
+        "links": {
+            "loginUrl": "https://login.salesforce.com/",
+            "enterpriseUrl": "/services/Soap/c/31.0/00Do0000000YZr8",
+            "metadataUrl": "/services/Soap/m/31.0/00Do0000000YZr8",
+            "partnerUrl": "/services/Soap/u/31.0/00Do0000000YZr8",
+            "restUrl": "/services/data/v31.0/",
+            "sobjectUrl": "/services/data/v31.0/sobjects/",
+            "searchUrl": "/services/data/v31.0/search/",
+            "queryUrl": "/services/data/v31.0/query/",
+            "recentItemsUrl": "/services/data/v31.0/recent/",
+            "chatterFeedsUrl": "/services/data/v31.0/chatter/feeds",
+            "chatterGroupsUrl": "/services/data/v31.0/chatter/groups",
+            "chatterUsersUrl": "/services/data/v31.0/chatter/users",
+            "chatterFeedItemsUrl": "/services/data/v31.0/chatter/feed-items",
+            "userUrl": "/005o0000000KXtTAAW"
+        },
+        "application": {
+            "namespace": null,
+            "name": "DreamForce Demo",
+            "canvasUrl": "https://localhost:8443/authenticate",
+            "applicationId": "06Po00000000JIh",
+            "version": "1.0",
+            "authType": "SIGNED_REQUEST",
+            "referenceId": "09Ho00000008hPU",
+            "options": [],
+            "samlInitiationMethod": "None",
+            "developerName": "DreamForce_Demo"
+        },
+        "organization": {
+            "organizationId": "00Do0000000YZr8EAG",
+            "name": "Xede Consulting Group",
+            "multicurrencyEnabled": false,
+            "namespacePrefix": null,
+            "currencyIsoCode": "USD"
+        },
+        "environment": {
+            "locationUrl": "https://c.na17.visual.force.com/servlet/servlet.Integration?lid=066o00000013eIP&ic=1",
+            "displayLocation": "Visualforce",
+            "sublocation": null,
+            "uiTheme": "Theme3",
+            "dimensions": {
+                "width": "400px",
+                "height": "900px",
+                "maxWidth": "400",
+                "maxHeight": "infinite",
+                "clientWidth": "496px",
+                "clientHeight": "30px"
+            },
+            "parameters": {
+                "attributes": {
+                    "type": "Opportunity",
+                    "url": "/services/data/v31.0/sobjects/Opportunity/006o0000003WqNyAAK"
+                },
+                "Owner": {
+                    "attributes": {
+                        "type": "User",
+                        "url": "/services/data/v31.0/sobjects/User/005o0000000KXtTAAW"
+                    },
+                    "Name": "Jim Rae",
+                    "Email": "jrae+df14@xede.com",
+                    "FirstName": "Jim",
+                    "Id": "005o0000000KXtTAAW",
+                    "LastName": "Rae"
+                },
+                "Probability": 100,
+                "StageName": "Closed Won",
+                "Amount": 235000,
+                "Type": "New Customer",
+                "OwnerId": "005o0000000KXtTAAW",
+                "Account": {
+                    "attributes": {
+                        "type": "Account",
+                        "url": "/services/data/v31.0/sobjects/Account/001o0000006WXMzAAO"
+                    },
+                    "Name": "Burlington Textiles Corp of America",
+                    "Id": "001o0000006WXMzAAO"
+                },
+                "Contact__c": "003o0000005OaRJAA0",
+                "Name": "Burlington Textiles Weaving Plant Generator",
+                "Quote_Number__c": "123",
+                "AccountId": "001o0000006WXMzAAO",
+                "ForecastCategoryName": "Closed",
+                "Id": "006o0000003WqNyAAK",
+                "CloseDate": "2012-07-26",
+                "Contact__r": {
+                    "attributes": {
+                        "type": "Contact",
+                        "url": "/services/data/v31.0/sobjects/Contact/003o0000005OaRJAA0"
+                    },
+                    "FirstName": "John",
+                    "Id": "003o0000005OaRJAA0",
+                    "LastName": "Bond"
+                }
+            },
+            "record": {
+                "Id": "006o0000003WqNyAAK",
+                "attributes": {
+                    "type": "Opportunity",
+                    "url": "/services/data/v31.0/sobjects/Opportunity/006o0000003WqNyAAK"
+                }
+            },
+            "version": {
+                "season": "SUMMER",
+                "api": "31.0"
+            }
+        }
+    }
+}

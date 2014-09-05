@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script type="text/javascript" src="/canvas-sdk/js/canvas-all.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script>
+    var sr;
+    $(document).ready(function () {
+        sr = <%- signedRequestJson %>;
+        
+        var conExists = (typeof sr.context.environment.parameters.Contact__r != 'undefined' )?true:false;
+        var quoteExists = (typeof sr.context.environment.parameters.Quote_Number__c != 'undefined' )?true:false;
+        $('#myAcct').html(sr.context.environment.parameters.Account.Name);
+        $('#myOwner').html("Account Manager: "+sr.context.environment.parameters.Owner.Name);
+        $('#myAmount').html("Opportunity Amount: $"+(typeof sr.context.environment.parameters.Amount != 'undefined' ? sr.context.environment.parameters.Amount : 0));
+        if(!conExists){
+            $('#btn1').hide();
+            $('#myQuote').html("You must have a contact associated to the Opportunity in order to create a Quote");
+            $('#myQuote').addClass("text-danger");
+        }else{
+            if(quoteExists){
+                $('#myQuote').html("Quote: "+sr.context.environment.parameters.Quote_Number__c+" ");
+                $('#quoteLbl').html("Update Quote");    
+            }else{
+                $('#myQuote').html("New Quote");
+                $('#quoteLbl').html("Generate Quote");
+            }
+            
+        }
+    });
+    
+    </script>
+
+</head>
+<body>
+<marquee><h1>Xede Quote Manager</h1></marquee>
+<a href="/xede" target="_blank">
+<img class="logo" src="/images/Xede-Logo.png" width="185" height="77" style="border:0;" /> </a>
+    <div id="container">
+        <div >
+        <h3><div id="myAcct"></div></h3>
+        </div>
+        <h4><div id="myOwner"></div></h4>
+        <h4><div id="myAmount"></div></h4>
+        <h4><div id="myQuote" style="float:left"></div></h4>
+        <br>
+        <br>
+        <div style="float:left">
+        <button id="btn1" onclick="location.href='/quote'"><div id="quoteLbl"></div></button>
+        </div>
+    </div>
+</body>
+</html>
